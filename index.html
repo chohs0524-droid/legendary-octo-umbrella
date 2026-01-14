@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High School History Hub</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <div class="app-container">
+        <header>
+            <h1 class="logo">HISTORY<span class="highlight">HUB</span></h1>
+            <p class="subtitle">과거를 통해 미래를 보다</p>
+        </header>
+
+        <nav class="glass-nav">
+            <button class="nav-btn active" data-target="home">홈</button>
+            <button class="nav-btn" data-target="korean-history">한국사 핵심</button>
+            <button class="nav-btn" data-target="world-history">세계사 탐구</button>
+            <button class="nav-btn" data-target="quiz">역사 퀴즈</button>
+            <button class="nav-btn" data-target="gallery">미디어 갤러리</button>
+        </nav>
+
+        <main class="content-area glass-panel">
+            <!-- Home Section -->
+            <section id="home" class="content-section active">
+                <h2>환영합니다, 역사 탐험가 여러분!</h2>
+                <div class="content-body">
+                    <p>역사는 단순한 과거의 기록이 아닙니다. 현재를 이해하고 미래를 창조하는 열쇠입니다.</p>
+                    <p>고등학생 여러분을 위해 엄선된 역사 지식과 흥미로운 이야기들을 만나보세요.</p>
+                    <div class="hero-image-placeholder">
+                        <span>History is the compass of time.</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Menu 1: Korean History -->
+            <section id="korean-history" class="content-section">
+                <h2>🇰🇷 한국사 핵심 요약</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>고조선과 삼국시대</h3>
+                        <p>한반도 역사의 시작과 고구려, 백제, 신라의 찬란한 문화 발전.</p>
+                    </div>
+                    <div class="card">
+                        <h3>고려와 조선</h3>
+                        <p>자주적인 고려의 기상과 유교 문화를 꽃피운 조선왕조 500년.</p>
+                    </div>
+                    <div class="card">
+                        <h3>근현대사</h3>
+                        <p>개항기부터 일제 강점기, 그리고 대한민국의 발전 과정.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Menu 2: World History -->
+            <section id="world-history" class="content-section">
+                <h2>🌍 세계사 탐구</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="date">고대</span>
+                        <div class="desc">4대 문명의 발생과 제국의 형성</div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="date">중세</span>
+                        <div class="desc">봉건 사회의 성립과 종교의 시대</div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="date">근대</span>
+                        <div class="desc">시민 혁명과 산업 혁명, 세계의 변화</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Menu 3: Quiz -->
+            <section id="quiz" class="content-section">
+                <h2>🧠 역사 퀴즈 챌린지</h2>
+                <div class="quiz-container">
+                    <div class="question-box">
+                        <p class="question">Q. 훈민정음을 창제한 조선의 왕은 누구일까요?</p>
+                        <div class="options">
+                            <button class="option-btn">태조 이성계</button>
+                            <button class="option-btn">정조</button>
+                            <button class="option-btn correct-answer">세종대왕</button>
+                            <button class="option-btn">영조</button>
+                        </div>
+                        <p class="result-msg"></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Menu 4: Gallery -->
+            <section id="gallery" class="content-section">
+                <h2>🖼️ 미디어 갤러리</h2>
+                <p>역사의 순간들을 생생한 이미지로 만나보세요.</p>
+                <div class="gallery-grid">
+                    <div class="gallery-item">🏛️</div>
+                    <div class="gallery-item">⚔️</div>
+                    <div class="gallery-item">📜</div>
+                    <div class="gallery-item">👑</div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
